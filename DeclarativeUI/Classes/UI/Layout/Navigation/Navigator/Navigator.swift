@@ -57,8 +57,8 @@ public extension Navigator {
         }
     }
     
-    /// Presents a FlameViewController saving it's reference
-    /// The view controlller dismissed event is observed to free the memory once the FlameViewController
+    /// Presents a DeclarativeViewController saving it's reference
+    /// The view controlller dismissed event is observed to free the memory once the DeclarativeViewController
     /// is not needed anymore
     /// - Parameters:
     ///   - viewController: The view controller to display over the current view controller’s content.
@@ -257,8 +257,8 @@ private extension Navigator {
         }
     }
     
-    func removeChildOnDismiss<T: DeclarativeViewController>(_ flameViewController: T) {
-        flameViewController.viewController
+    func removeChildOnDismiss<T: DeclarativeViewController>(_ DeclarativeViewController: T) {
+        DeclarativeViewController.viewController
             .events.dismissed
             .subscribe().onNext { [weak self] subscriber, viewController in
                 self?.removeChild(viewController)

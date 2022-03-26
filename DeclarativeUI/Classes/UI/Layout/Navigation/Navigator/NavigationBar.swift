@@ -135,7 +135,7 @@ public extension NavigationBar {
 
 import SwiftUI
 @available(iOS 13.0.0, *)
-struct FlameNavigation_Previews: PreviewProvider {
+struct DeclarativeNavigation_Previews: PreviewProvider {
     static var previews: some View {
         SwiftUI.Group {
             wrap(NavigationBar(title: "Sem botões", backIcon: Image(), closeIcon: Image())
