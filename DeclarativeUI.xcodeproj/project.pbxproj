@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0231729C27F38420007A07B0 /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231729727F38420007A07B0 /* OrderedSet.swift */; };
+		0231729D27F38420007A07B0 /* OrderedSet+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231729827F38420007A07B0 /* OrderedSet+Array.swift */; };
+		0231729E27F38420007A07B0 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231729927F38420007A07B0 /* Functions.swift */; };
+		0231729F27F38420007A07B0 /* OrderedSet+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231729A27F38420007A07B0 /* OrderedSet+CustomStringConvertible.swift */; };
+		023172A027F38420007A07B0 /* OrderedSet+Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231729B27F38420007A07B0 /* OrderedSet+Set.swift */; };
+		023172A227F38506007A07B0 /* OrderedSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023172A127F38506007A07B0 /* OrderedSetTests.swift */; };
 		0298E91A27E93AF1003F328B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0298E91927E93AF1003F328B /* AppDelegate.swift */; };
 		0298E92327E93AF3003F328B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0298E92227E93AF3003F328B /* Assets.xcassets */; };
 		0298E92627E93AF3003F328B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0298E92427E93AF3003F328B /* LaunchScreen.storyboard */; };
@@ -238,6 +244,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0231729727F38420007A07B0 /* OrderedSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedSet.swift; sourceTree = "<group>"; };
+		0231729827F38420007A07B0 /* OrderedSet+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedSet+Array.swift"; sourceTree = "<group>"; };
+		0231729927F38420007A07B0 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		0231729A27F38420007A07B0 /* OrderedSet+CustomStringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedSet+CustomStringConvertible.swift"; sourceTree = "<group>"; };
+		0231729B27F38420007A07B0 /* OrderedSet+Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedSet+Set.swift"; sourceTree = "<group>"; };
+		023172A127F38506007A07B0 /* OrderedSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedSetTests.swift; sourceTree = "<group>"; };
 		0298E91727E93AF1003F328B /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0298E91927E93AF1003F328B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0298E92227E93AF3003F328B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -473,6 +485,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0231729627F38407007A07B0 /* OrderedSet */ = {
+			isa = PBXGroup;
+			children = (
+				0231729927F38420007A07B0 /* Functions.swift */,
+				0231729727F38420007A07B0 /* OrderedSet.swift */,
+				0231729827F38420007A07B0 /* OrderedSet+Array.swift */,
+				0231729A27F38420007A07B0 /* OrderedSet+CustomStringConvertible.swift */,
+				0231729B27F38420007A07B0 /* OrderedSet+Set.swift */,
+			);
+			path = OrderedSet;
+			sourceTree = "<group>";
+		};
 		0298E91827E93AF1003F328B /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -582,6 +606,7 @@
 				02BABA0527EF9FA9004D2D4F /* PublisherFunctionsTests.swift */,
 				02BABA0627EF9FA9004D2D4F /* PublisherTests.swift */,
 				02BABA0127EF9FA9004D2D4F /* SubscriberTests.swift */,
+				023172A127F38506007A07B0 /* OrderedSetTests.swift */,
 			);
 			path = Observables;
 			sourceTree = "<group>";
@@ -670,6 +695,7 @@
 		02D856C827E6491F0095D823 /* Observables */ = {
 			isa = PBXGroup;
 			children = (
+				0231729627F38407007A07B0 /* OrderedSet */,
 				02D856E427E7A1020095D823 /* Protocols */,
 				02D856DF27E7A0EE0095D823 /* Base */,
 				02D856E727E7A1220095D823 /* DisposeBag.swift */,
@@ -1534,6 +1560,7 @@
 				02D856E627E7A1110095D823 /* Cancelable.swift in Sources */,
 				02D8574D27E7A3E50095D823 /* BaseSegmentedControl.swift in Sources */,
 				02D8580627E7AA4B0095D823 /* Size.swift in Sources */,
+				0231729F27F38420007A07B0 /* OrderedSet+CustomStringConvertible.swift in Sources */,
 				02D8576227E7A4F20095D823 /* ContainerView.swift in Sources */,
 				02D8570A27E7A3070095D823 /* Layout+Subview.swift in Sources */,
 				02D8573A27E7A3E50095D823 /* InvisibleView.swift in Sources */,
@@ -1593,6 +1620,7 @@
 				02D856D127E64A480095D823 /* SetExtensions.swift in Sources */,
 				02D856E327E7A0FB0095D823 /* Subscriber.swift in Sources */,
 				02D8573D27E7A3E50095D823 /* ViewControllerObserver.swift in Sources */,
+				0231729C27F38420007A07B0 /* OrderedSet.swift in Sources */,
 				02D8581727E7AA880095D823 /* AccessibilityConfiguration.swift in Sources */,
 				02D857EE27E7A9E10095D823 /* NavigationBarConfiguration.swift in Sources */,
 				02D8576D27E7A5360095D823 /* Image.swift in Sources */,
@@ -1625,6 +1653,8 @@
 				02D857BE27E7A6E10095D823 /* WebViewInterceptor.swift in Sources */,
 				02D857F427E7A9E10095D823 /* NavigatorDelegate.swift in Sources */,
 				02D857AD27E7A6670095D823 /* ZStackView.swift in Sources */,
+				0231729D27F38420007A07B0 /* OrderedSet+Array.swift in Sources */,
+				0231729E27F38420007A07B0 /* Functions.swift in Sources */,
 				02D8581627E7AA880095D823 /* State.swift in Sources */,
 				02D857BF27E7A6E10095D823 /* WebView.swift in Sources */,
 				02D8582A27E8ADA10095D823 /* ErrorViewConfigurator.swift in Sources */,
@@ -1636,6 +1666,7 @@
 				02D8581D27E7B8560095D823 /* FontIcon.swift in Sources */,
 				02D8574127E7A3E50095D823 /* BaseProgressView.swift in Sources */,
 				02D8574927E7A3E50095D823 /* UIViewControllerEvents.swift in Sources */,
+				023172A027F38420007A07B0 /* OrderedSet+Set.swift in Sources */,
 				02D8582027E7BC080095D823 /* AutoMockableProtocol.swift in Sources */,
 				02D857D127E7A96B0095D823 /* UIViewConvertible+Visibility.swift in Sources */,
 				02D8579127E7A5F10095D823 /* ProgressStep.swift in Sources */,
@@ -1657,6 +1688,7 @@
 				02BABA0827EF9FA9004D2D4F /* ObservableSubscribeTests.swift in Sources */,
 				02BAB9FD27EF9EA5004D2D4F /* DeclarativeViewModelTests.swift in Sources */,
 				02BABA0C27EF9FAA004D2D4F /* PublisherTests.swift in Sources */,
+				023172A227F38506007A07B0 /* OrderedSetTests.swift in Sources */,
 				02BAB9FB27EF9D62004D2D4F /* GradientProviderTests.swift in Sources */,
 				02BABA0027EF9F1A004D2D4F /* DisposeBagTests.swift in Sources */,
 				02BABA1127EFA06F004D2D4F /* SetExtensionsTests.swift in Sources */,

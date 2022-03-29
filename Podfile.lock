@@ -1,24 +1,20 @@
 PODS:
   - Nimble (9.2.1)
   - Quick (3.1.2)
-  - SwiftOrderedSet (5.0.0)
 
 DEPENDENCIES:
   - Nimble (= 9.2.1)
   - Quick
-  - SwiftOrderedSet
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Nimble
     - Quick
-    - SwiftOrderedSet
 
 SPEC CHECKSUMS:
   Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
   Quick: 60f0ea3b8e0cfc0df3259a5c06a238ad8b3c46e0
-  SwiftOrderedSet: 29d88a523c744c4243a1fb70f11021454a24e061
 
-PODFILE CHECKSUM: b53e6a85ed64454a19b7efccaf4f3f86a519227c
+PODFILE CHECKSUM: e306a44d23fdb9976163c6a689221bfc92e9343b
 
 COCOAPODS: 1.11.3

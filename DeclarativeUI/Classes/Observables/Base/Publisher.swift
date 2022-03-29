@@ -1,5 +1,4 @@
 import Foundation
-import SwiftOrderedSet
 
 public class Publisher<Value> {
     public typealias Handler = (Value) -> Void

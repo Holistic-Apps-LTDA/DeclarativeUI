@@ -1,3 +1,5 @@
+import Foundation
+
 public struct AnimationDuration {
     public var value: TimeInterval
     fileprivate init(_ value: TimeInterval) {
