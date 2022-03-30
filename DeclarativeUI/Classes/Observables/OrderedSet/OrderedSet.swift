@@ -1,8 +1,8 @@
 /// An ordered collection of unique `Element` instances
-public struct OrderedSet<Element : Hashable> : Hashable, RandomAccessCollection, MutableCollection {
+struct OrderedSet<Element : Hashable> : Hashable, RandomAccessCollection, MutableCollection {
 
-    public typealias SubSequence = ArraySlice<Element>
-    public typealias Indices = DefaultIndices<OrderedSet<Element>>
+    typealias SubSequence = ArraySlice<Element>
+    typealias Indices = DefaultIndices<OrderedSet<Element>>
 
     var array: [Element]
     var set: Set<Element>
@@ -10,7 +10,7 @@ public struct OrderedSet<Element : Hashable> : Hashable, RandomAccessCollection,
     /// The position of the first element in a nonempty collection.
     ///
     /// If the collection is empty, `startIndex` is equal to `endIndex`.
-    public var startIndex: Int {
+    var startIndex: Int {
         return array.startIndex
     }
     
@@ -29,7 +29,7 @@ public struct OrderedSet<Element : Hashable> : Hashable, RandomAccessCollection,
     ///     // Prints "[30, 40, 50]"
     ///
     /// If the collection is empty, `endIndex` is equal to `startIndex`.
-    public var endIndex: Int {
+    var endIndex: Int {
         return array.endIndex
     }
 
@@ -38,19 +38,19 @@ public struct OrderedSet<Element : Hashable> : Hashable, RandomAccessCollection,
     /// - Parameter i: A valid index of the collection. `i` must be less than
     ///   `endIndex`.
     /// - Returns: The index value immediately after `i`.
-    public func index(after i: Int) -> Int {
+    func index(after i: Int) -> Int {
         return i + 1
     }
     
-    public func index(before i: Int) -> Int {
+    func index(before i: Int) -> Int {
         return i - 1
     }
     
-    public func index(_ i: Int, offsetBy n: Int, limitedBy limit: Int) -> Int? {
+    func index(_ i: Int, offsetBy n: Int, limitedBy limit: Int) -> Int? {
         return array.index(i, offsetBy: n, limitedBy: limit)
     }
     
-    public subscript(position: Int) -> Element {
+    subscript(position: Int) -> Element {
         get {
             return array[position]
         }
@@ -84,7 +84,7 @@ public struct OrderedSet<Element : Hashable> : Hashable, RandomAccessCollection,
     ///
     /// - Parameter bounds: A range of the collection's indices. The bounds of
     ///   the range must be valid indices of the collection.
-    public subscript(bounds: Range<Int>) -> ArraySlice<Element> {
+    subscript(bounds: Range<Int>) -> ArraySlice<Element> {
         get {
             return array[bounds]
         }
@@ -93,14 +93,14 @@ public struct OrderedSet<Element : Hashable> : Hashable, RandomAccessCollection,
         }
     }
     
-    public func hash(into hasher: inout Hasher) {
+    func hash(into hasher: inout Hasher) {
         hasher.combine(set)
     }
     
 }
 
 
-public func ==<T>(lhs: OrderedSet<T>, rhs: OrderedSet<T>) -> Bool {
+func ==<T>(lhs: OrderedSet<T>, rhs: OrderedSet<T>) -> Bool {
     return lhs.set == rhs.set
 }
 
