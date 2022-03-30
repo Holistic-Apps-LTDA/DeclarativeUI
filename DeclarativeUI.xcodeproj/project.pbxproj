@@ -45,7 +45,6 @@
 		02BABA0C27EF9FAA004D2D4F /* PublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABA0627EF9FA9004D2D4F /* PublisherTests.swift */; };
 		02BABA1027EFA06F004D2D4F /* CollectionExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABA0E27EFA06F004D2D4F /* CollectionExtensionsTests.swift */; };
 		02BABA1127EFA06F004D2D4F /* SetExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABA0F27EFA06F004D2D4F /* SetExtensionsTests.swift */; };
-		02D856B027E646BF0095D823 /* DeclarativeUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 02D856AF27E646BF0095D823 /* DeclarativeUI.docc */; };
 		02D856B627E646C00095D823 /* DeclarativeUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D856AB27E646BF0095D823 /* DeclarativeUI.framework */; };
 		02D856BC27E646C00095D823 /* DeclarativeUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 02D856AE27E646BF0095D823 /* DeclarativeUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02D856CC27E64A030095D823 /* ArrayBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D856CB27E64A030095D823 /* ArrayBuilder.swift */; };
@@ -266,7 +265,6 @@
 		02BABA0F27EFA06F004D2D4F /* SetExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetExtensionsTests.swift; sourceTree = "<group>"; };
 		02D856AB27E646BF0095D823 /* DeclarativeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeclarativeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D856AE27E646BF0095D823 /* DeclarativeUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeclarativeUI.h; sourceTree = "<group>"; };
-		02D856AF27E646BF0095D823 /* DeclarativeUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DeclarativeUI.docc; sourceTree = "<group>"; };
 		02D856B527E646C00095D823 /* DeclarativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeclarativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D856CB27E64A030095D823 /* ArrayBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayBuilder.swift; sourceTree = "<group>"; };
 		02D856CE27E64A3B0095D823 /* Collect+Get.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collect+Get.swift"; sourceTree = "<group>"; };
@@ -588,7 +586,6 @@
 			isa = PBXGroup;
 			children = (
 				02D856C727E647F90095D823 /* Classes */,
-				02D856C627E647110095D823 /* Documentation */,
 				02D856C527E647020095D823 /* Headers */,
 			);
 			path = DeclarativeUI;
@@ -610,14 +607,6 @@
 				02D856AE27E646BF0095D823 /* DeclarativeUI.h */,
 			);
 			path = Headers;
-			sourceTree = "<group>";
-		};
-		02D856C627E647110095D823 /* Documentation */ = {
-			isa = PBXGroup;
-			children = (
-				02D856AF27E646BF0095D823 /* DeclarativeUI.docc */,
-			);
-			path = Documentation;
 			sourceTree = "<group>";
 		};
 		02D856C727E647F90095D823 /* Classes */ = {
@@ -1376,7 +1365,6 @@
 				02D857B927E7A6CB0095D823 /* TextFieldDelegate.swift in Sources */,
 				02D8574327E7A3E50095D823 /* BaseCollectionView.swift in Sources */,
 				02D8570C27E7A3070095D823 /* Layout+ExtendedConstraints.swift in Sources */,
-				02D856B027E646BF0095D823 /* DeclarativeUI.docc in Sources */,
 				0298E96927E9FE02003F328B /* Pager.swift in Sources */,
 				02D857E127E7A9C40095D823 /* DeclarativeCoordinator.swift in Sources */,
 				02D8575D27E7A4DE0095D823 /* CellBuilder.swift in Sources */,
