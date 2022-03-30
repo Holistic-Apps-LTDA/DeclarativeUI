@@ -4,10 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "DeclarativeUI",
-    platforms: [.macOS(.v10_13),
-                .iOS(.v11),
-                .tvOS(.v11),
-                .watchOS(.v4)],
+    platforms: [.iOS(.v11)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
