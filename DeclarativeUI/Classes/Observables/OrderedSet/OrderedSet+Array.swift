@@ -36,7 +36,7 @@ extension OrderedSet : ExpressibleByArrayLiteral, RangeReplaceableCollection {
     ///   and `newElements`. If the call to `replaceSubrange` simply appends the
     ///   contents of `newElements` to the collection, the complexity is O(*n*),
     ///   where *n* is the length of `newElements`.
-    public mutating func replaceSubrange<C : Collection>(_ subRange: Range<Index>, with newElements: C) where C.Iterator.Element == IndexingIterator<OrderedSet>.Element {
+    mutating func replaceSubrange<C : Collection>(_ subRange: Range<Index>, with newElements: C) where C.Iterator.Element == IndexingIterator<OrderedSet>.Element {
         let oldArray = array[subRange]
         let oldSet = Set(oldArray)
         let (newArray, newSet) = collapse(newElements)
@@ -49,28 +49,28 @@ extension OrderedSet : ExpressibleByArrayLiteral, RangeReplaceableCollection {
 
     
     /// Create an instance containing `elements`.
-    public init(arrayLiteral elements: Element...) {
+    init(arrayLiteral elements: Element...) {
         (self.array, self.set) = collapse(elements)
     }
     
     /// Construct an empty OrderedSet.
-    public init() {
+    init() {
         self.array = []
         self.set = []
     }
     
     /// Construct from an arbitrary sequence with elements of type `Element`.
-    public init<S : Sequence>(_ s: S) where S.Iterator.Element == Element {
+    init<S : Sequence>(_ s: S) where S.Iterator.Element == Element {
         (self.array, self.set) = collapse(s)
     }
 
-    public var capacity: Int {
+    var capacity: Int {
         return array.capacity
     }
     
     /// If `!self.isEmpty`, remove the last element and return it, otherwise
     /// return `nil`.
-    public mutating func popLast() -> Element? {
+    mutating func popLast() -> Element? {
         guard let last = array.popLast() else { return nil }
         set.remove(last)
         return last
@@ -79,6 +79,6 @@ extension OrderedSet : ExpressibleByArrayLiteral, RangeReplaceableCollection {
 }
 
 /// Operator form of `appendContentsOf`.
-public func +=<Element, S : Sequence>(lhs: inout OrderedSet<Element>, rhs: S) where S.Iterator.Element == Element {
+func +=<Element, S : Sequence>(lhs: inout OrderedSet<Element>, rhs: S) where S.Iterator.Element == Element {
     lhs.append(contentsOf: rhs)
 }
