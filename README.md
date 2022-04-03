@@ -29,6 +29,10 @@ pod 'DeclarativeUUI', '~> 0.0.7'
 github "Holistic-Apps-LTDA/DeclarativeUI" ~> 0.0.7
 ```
 
+```ogdl
+carthage update --use-xcframeworks
+```
+
 ### Swift Package Manager
 
 The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. 
