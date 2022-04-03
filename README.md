@@ -120,7 +120,7 @@ final class DemoViewController: DeclarativeViewController {
     
     // MARK: Life Cycle
 
-    public init(viewModel: StatementDetailViewModel) {
+    public init(viewModel: DemoViewModel) {
         self.viewModel = viewModel
     }
 }
