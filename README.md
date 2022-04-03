@@ -28,6 +28,7 @@ pod 'DeclarativeUUI', '~> 0.0.7'
 ```ogdl
 github "Holistic-Apps-LTDA/DeclarativeUI" ~> 0.0.7
 ```
+In terminal run:
 
 ```ogdl
 carthage update --use-xcframeworks
