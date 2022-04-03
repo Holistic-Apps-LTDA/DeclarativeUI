@@ -55,7 +55,7 @@ enum DemoInteractionEvents {
 
 import DeclarativeUI
 
-final class DemoViewModel: FlameViewModel<Void, Error> {
+final class DemoViewModel: DeclarativeViewModel<Void, Error> {
 
     // MARK: Attributes
 
