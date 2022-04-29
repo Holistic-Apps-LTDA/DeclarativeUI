@@ -3,7 +3,12 @@ import UIKit
 extension ListView {
     class DataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
         var rows: [Row] = []
+        let events = ListViewEvents()
         
+        struct ListViewEvents {
+            let didScroll = Publisher<UIScrollView>()
+        }
+
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             rows[indexPath.row].runTap()
         }
@@ -22,6 +27,10 @@ extension ListView {
         
         func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
             rows[indexPath.row].runDisplay()
+        }
+        
+        func scrollViewDidScroll(_ scrollView: UIScrollView) {
+            events.didScroll.publish(scrollView)
         }
     }
 }
