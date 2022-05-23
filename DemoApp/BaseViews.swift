@@ -87,6 +87,13 @@ class BaseViews: DeclarativeViewController {
                 .navigationTitle("CollectionView")
             self.navigator.push(viewController)
         }
+        
+        row(title: "ActivityIndicator") { [weak self] in
+            guard let self = self else { return }
+            let viewController = ActivityIndicatorView(navigator: self.navigator)
+                .navigationTitle("ActivityIndicator")
+            self.navigator.push(viewController)
+        }
     }
     
     func row(title: String, action: @escaping () -> Void) -> Row {
