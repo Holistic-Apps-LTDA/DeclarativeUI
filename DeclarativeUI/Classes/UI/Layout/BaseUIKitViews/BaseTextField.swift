@@ -38,7 +38,7 @@ public extension BaseTextField {
     }
     
     override func deleteBackward() {
-            super.deleteBackward()
-            events.deleteBackward.publish(self)
-        }
+        super.deleteBackward()
+        events.deleteBackward.publish(self)
+    }
 }

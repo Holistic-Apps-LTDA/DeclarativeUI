@@ -31,6 +31,10 @@
 		0298E96B27E9FF82003F328B /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0298E96A27E9FF82003F328B /* PagerView.swift */; };
 		0298E96D27EA0072003F328B /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0298E96C27EA0072003F328B /* LabelView.swift */; };
 		0298E96F27EA092F003F328B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0298E96E27EA092F003F328B /* CollectionViewController.swift */; };
+		029E39A5283C4B8400DC21FF /* CamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E39A4283C4B8400DC21FF /* CamViewController.swift */; };
+		029E39A7283C4CD100DC21FF /* BaseActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E39A6283C4CD100DC21FF /* BaseActivityIndicator.swift */; };
+		029E39AA283C506300DC21FF /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E39A9283C506300DC21FF /* ActivityIndicator.swift */; };
+		029E39AC283C525B00DC21FF /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E39AB283C525B00DC21FF /* ActivityIndicator.swift */; };
 		02BAB9F227EF99E3004D2D4F /* SpacerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BAB9F127EF99E3004D2D4F /* SpacerTests.swift */; };
 		02BAB9F627EF9B42004D2D4F /* DeclarativeCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BAB9F527EF9B42004D2D4F /* DeclarativeCoordinatorTests.swift */; };
 		02BAB9F827EF9C3F004D2D4F /* NavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BAB9F727EF9C3F004D2D4F /* NavigatorTests.swift */; };
@@ -249,6 +253,10 @@
 		0298E96A27E9FF82003F328B /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
 		0298E96C27EA0072003F328B /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		0298E96E27EA092F003F328B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		029E39A4283C4B8400DC21FF /* CamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamViewController.swift; sourceTree = "<group>"; };
+		029E39A6283C4CD100DC21FF /* BaseActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseActivityIndicator.swift; sourceTree = "<group>"; };
+		029E39A9283C506300DC21FF /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		029E39AB283C525B00DC21FF /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		02BAB9F127EF99E3004D2D4F /* SpacerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerTests.swift; sourceTree = "<group>"; };
 		02BAB9F527EF9B42004D2D4F /* DeclarativeCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarativeCoordinatorTests.swift; sourceTree = "<group>"; };
 		02BAB9F727EF9C3F004D2D4F /* NavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorTests.swift; sourceTree = "<group>"; };
@@ -480,6 +488,7 @@
 				0298E96A27E9FF82003F328B /* PagerView.swift */,
 				0298E96C27EA0072003F328B /* LabelView.swift */,
 				0298E96E27EA092F003F328B /* CollectionViewController.swift */,
+				029E39AB283C525B00DC21FF /* ActivityIndicator.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -498,6 +507,14 @@
 				0298E96827E9FE02003F328B /* Pager.swift */,
 			);
 			path = Pager;
+			sourceTree = "<group>";
+		};
+		029E39A8283C503400DC21FF /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				029E39A9283C506300DC21FF /* ActivityIndicator.swift */,
+			);
+			path = ActivityIndicator;
 			sourceTree = "<group>";
 		};
 		02BAB9E427EF93CE004D2D4F /* UI */ = {
@@ -791,6 +808,8 @@
 				02D8572527E7A3E40095D823 /* ViewController.swift */,
 				02D8572027E7A3E40095D823 /* ViewControllerObserver.swift */,
 				02D8585A27E90B3C0095D823 /* BasePDFView.swift */,
+				029E39A4283C4B8400DC21FF /* CamViewController.swift */,
+				029E39A6283C4CD100DC21FF /* BaseActivityIndicator.swift */,
 			);
 			path = BaseUIKitViews;
 			sourceTree = "<group>";
@@ -798,6 +817,7 @@
 		02D8574E27E7A4020095D823 /* BaseViews */ = {
 			isa = PBXGroup;
 			children = (
+				029E39A8283C503400DC21FF /* ActivityIndicator */,
 				02D8585C27E90B6A0095D823 /* PDF */,
 				02D857BA27E7A6D40095D823 /* WebView */,
 				02D857B127E7A6BC0095D823 /* TextField */,
@@ -1329,6 +1349,7 @@
 				0298E95427E9EBF0003F328B /* SearchBarView.swift in Sources */,
 				0298E96227E9F9B5003F328B /* ScrollView.swift in Sources */,
 				0298E95E27E9F393003F328B /* TextFieldView.swift in Sources */,
+				029E39AC283C525B00DC21FF /* ActivityIndicator.swift in Sources */,
 				0298E96627E9FD7B003F328B /* PageControlViewController.swift in Sources */,
 				0298E95127E9EAD8003F328B /* BaseViews.swift in Sources */,
 				0298E96427E9FC2C003F328B /* PickerView.swift in Sources */,
@@ -1360,6 +1381,7 @@
 				02D857FF27E7AA280095D823 /* DeclarativeView.swift in Sources */,
 				02D856E227E7A0FB0095D823 /* Publisher.swift in Sources */,
 				02D857A227E7A63B0095D823 /* SegmentedControl.swift in Sources */,
+				029E39AA283C506300DC21FF /* ActivityIndicator.swift in Sources */,
 				02D8573B27E7A3E50095D823 /* BaseScrollView.swift in Sources */,
 				02D8578527E7A5A90095D823 /* PageControl.swift in Sources */,
 				02D857B927E7A6CB0095D823 /* TextFieldDelegate.swift in Sources */,
@@ -1379,6 +1401,7 @@
 				02D8575E27E7A4DE0095D823 /* AlignedCollectionViewFlowLayout.swift in Sources */,
 				02D857D427E7A96B0095D823 /* FlameView+CornerRadius.swift in Sources */,
 				02D8579727E7A60D0095D823 /* ScrollViewPreview.swift in Sources */,
+				029E39A7283C4CD100DC21FF /* BaseActivityIndicator.swift in Sources */,
 				02D857D727E7A96B0095D823 /* UILayoutPriorityExtension.swift in Sources */,
 				02D856E627E7A1110095D823 /* Cancelable.swift in Sources */,
 				02D8574D27E7A3E50095D823 /* BaseSegmentedControl.swift in Sources */,
@@ -1422,6 +1445,7 @@
 				02D8570D27E7A3070095D823 /* ConstraintBuilder.swift in Sources */,
 				02D857FE27E7AA280095D823 /* UIViewConvertible.swift in Sources */,
 				02D8574B27E7A3E50095D823 /* NavigationController.swift in Sources */,
+				029E39A5283C4B8400DC21FF /* CamViewController.swift in Sources */,
 				02D8574C27E7A3E50095D823 /* BaseTableView.swift in Sources */,
 				02D857B027E7A67E0095D823 /* StateView.swift in Sources */,
 				02D8577327E7A5590095D823 /* TextAlignment.swift in Sources */,

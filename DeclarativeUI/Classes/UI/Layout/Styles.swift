@@ -68,4 +68,5 @@ public extension Color {
     static var black = Color(value: UIColor(red: 0 / 255, green: 0 / 255, blue: 0 / 255, alpha: 1))
     static var black2 = Color(value: UIColor(red: 0 / 255, green: 0 / 255, blue: 0 / 255, alpha: 0.6))
     static var white = Color(value: UIColor(red: 255 / 255, green: 255 / 255, blue: 255 / 255, alpha: 1))
+    static var clear = Color(value: .clear)
 }

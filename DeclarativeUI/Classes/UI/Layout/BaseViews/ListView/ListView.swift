@@ -48,6 +48,14 @@ public extension ListView {
                                              for: .valueChanged)
         return self
     }
+    
+    @discardableResult
+    func didScroll(_ handler: @escaping (UIScrollView) -> Void) -> Self {
+        observe(dataSource.events.didScroll) { _, value in
+            handler(value)
+        }
+        return self
+    }
 }
 
 private extension ListView {
