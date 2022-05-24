@@ -34,7 +34,8 @@ public class ActivityIndicator: DeclarativeView {
         activityIndicator.stopAnimating()
     }
     
-    public func animate(_ observable: Observable<Bool>) {
+    @discardableResult
+    public func animate(_ observable: Observable<Bool>) -> Self {
         observable.subscribe()
             .onNext { [weak self] value in
                 guard let self = self else { return }
@@ -45,5 +46,6 @@ public class ActivityIndicator: DeclarativeView {
                 }
             }
             .disposedBy(self)
+        return self
     }
 }

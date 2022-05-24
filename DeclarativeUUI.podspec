@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "DeclarativeUUI"
-  spec.version      = "0.0.9"
+  spec.version      = "0.0.10"
   spec.summary      = "A library to develop UI declaratively in Swift."
 
   spec.description  = <<-DESC
